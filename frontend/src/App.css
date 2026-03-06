@@ -1,0 +1,246 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+/* ── Auth ── */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.auth-box h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.auth-box h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #888;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toggle-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* ── Inputs ── */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: transparent;
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+/* ── Buttons ── */
+button {
+  cursor: pointer;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #646cff;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid #555;
+  color: #888;
+}
+
+button.secondary:hover {
+  border-color: #888;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Page layout ── */
+.page {
+  min-height: 100vh;
+  padding: 0 1.5rem 2rem;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.top-bar h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.top-bar h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.top-bar-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* ── Blog List ── */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-card {
+  padding: 1.25rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.blog-card:hover {
+  border-color: #646cff;
+}
+
+.blog-card h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+
+.blog-preview {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ── Single Blog ── */
+.blog-article {
+  max-width: 680px;
+}
+
+.blog-article h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content {
+  line-height: 1.8;
+  white-space: pre-wrap;
+  margin-top: 1.5rem;
+}
+
+/* ── Badge ── */
+.badge {
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.published {
+  background: #1a3a1a;
+  color: #4caf50;
+}
+
+.badge.draft {
+  background: #3a3a1a;
+  color: #ffb300;
+}
+
+/* ── Blog Form ── */
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 680px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+}
+
+/* ── Utilities ── */
+.error {
+  color: #f44336;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.muted {
+  color: #666;
+}

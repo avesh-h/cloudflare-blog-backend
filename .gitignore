@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# env files (extra safety at root level)
+.env
+.env.*
+.dev.vars
+
+# dependencies
+node_modules/
+
+# logs
+*.log
